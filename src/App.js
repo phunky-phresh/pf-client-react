@@ -25,9 +25,9 @@ export default function App() {
   return (
     <Auth.Provider value={ auth }>
       <ApolloProvider>
-      {/* <FirebaseProvider> */}
+      <FirebaseProvider>
         <Landing />
-      {/* </FirebaseProvider> */}
+      </FirebaseProvider>
     </ApolloProvider>
     </Auth.Provider>
 

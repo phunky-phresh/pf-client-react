@@ -16,9 +16,13 @@ export default function Apollo ({ children }) {
     uri: "https://hasuraql-pf.herokuapp.com/v1/graphql",
     headers: token ? { Authorization: `Bearer ${ token }` } : {},
   });
-
+  
+  
   const link = split(
     ({ query }) => {
+      console.log('Apollo, link');
+      
+      
       const { kind, operation } = getMainDefinition( query );
       return kind === "OperationDefinition" && operation === "subscription";
     },

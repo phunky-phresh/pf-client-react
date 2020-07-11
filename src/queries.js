@@ -8,8 +8,20 @@ const GET_USER = gql`
   }
 `;
 
+export const GET_USERS = gql`
+  query MyQuery {
+  users {
+    id
+    first_name
+    last_name
+    email
+  }
+}
+`;
+
 export default {
   auth: {
-    getUser: GET_USER
+    getUser: GET_USER,
+    getUsers: GET_USERS,
   },
 };
