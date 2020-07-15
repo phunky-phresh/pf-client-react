@@ -1,0 +1,238 @@
+[debug] [2020-07-15T06:48:05.795Z] ----------------------------------------------------------------------
+[debug] [2020-07-15T06:48:05.797Z] Command:       /usr/local/Cellar/node/13.12.0/bin/node /Users/NickCooney/.npm-packages/bin/firebase functions:shell
+[debug] [2020-07-15T06:48:05.797Z] CLI Version:   8.5.0
+[debug] [2020-07-15T06:48:05.797Z] Platform:      darwin
+[debug] [2020-07-15T06:48:05.798Z] Node Version:  v13.12.0
+[debug] [2020-07-15T06:48:05.799Z] Time:          Wed Jul 15 2020 16:48:05 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2020-07-15T06:48:05.799Z] ----------------------------------------------------------------------
+[debug] [2020-07-15T06:48:05.799Z] 
+[debug] [2020-07-15T06:48:05.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-15T06:48:05.808Z] > authorizing via signed-in user
+[debug] [2020-07-15T06:48:05.808Z] [iam] checking project oauthpf for permissions ["firebase.projects.get"]
+[debug] [2020-07-15T06:48:05.811Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/oauthpf:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-15T06:48:07.061Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 15 Jul 2020 06:48:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1010","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"13\""}}
+[debug] [2020-07-15T06:48:07.086Z] [functions] Watching "/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions" for Cloud Functions...
+[debug] [2020-07-15T06:48:07.099Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-07-15T06:48:07.100Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-07-15T06:48:07.100Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-07-15T06:48:07.100Z] DEBUG: [worker-~diagnostic~-0db86181-bede-4b88-90c3-a95f61fc4cc5]: Assigning socketPath: /var/folders/v8/mgx6t3tx2sd3yp7zfsms4hp80000gn/T/fire_emu_1562.sock
+[debug] [2020-07-15T06:48:07.102Z] DEBUG: [worker-~diagnostic~-0db86181-bede-4b88-90c3-a95f61fc4cc5]: BUSY
+[debug] [2020-07-15T06:48:07.486Z] DEBUG: [runtime-status] [1562] Functions runtime initialized. {"cwd":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions","node_version":"13.12.0"}
+[debug] [2020-07-15T06:48:07.491Z] DEBUG: [runtime-status] [1562] Disabled runtime features: undefined
+[debug] [2020-07-15T06:48:07.494Z] DEBUG: [runtime-status] [1562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-15T06:48:07.495Z] DEBUG: [runtime-status] [1562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:48:07.501Z] DEBUG: [runtime-status] [1562] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-07-15T06:48:07.502Z] DEBUG: [runtime-status] [1562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:48:07.542Z] DEBUG: [runtime-status] [1562] Checked functions.config() {"config":{}}
+[debug] [2020-07-15T06:48:07.542Z] DEBUG: [runtime-status] [1562] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-07-15T06:48:07.543Z] DEBUG: [runtime-status] [1562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:48:07.544Z] DEBUG: [runtime-status] [1562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-15T06:48:07.545Z] DEBUG: [runtime-status] [1562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:48:07.545Z] DEBUG: [runtime-status] [1562] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[debug] [2020-07-15T06:48:07.555Z] DEBUG: [runtime-status] [1562] initializeApp(DEFAULT) {"databaseURL":"https://oauthpf.firebaseio.com","storageBucket":"oauthpf.appspot.com","projectId":"oauthpf"}
+[warn] ⚠  It looks like you're trying to access functions.config().hasura but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().hasura but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] ⚠  TypeError: Cannot read property 'adminsecret' of undefined
+    at Object.<anonymous> (/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/index.js:9:62)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Module.require (internal/modules/cjs/loader.js:1036:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'adminsecret' of undefined\n    at Object.<anonymous> (/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/index.js:9:62)\n    at Module._compile (internal/modules/cjs/loader.js:1147:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)\n    at Module.load (internal/modules/cjs/loader.js:996:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:896:14)\n    at Module.require (internal/modules/cjs/loader.js:1036:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at /Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-07-15T06:48:07.585Z] DEBUG: [worker-~diagnostic~-0db86181-bede-4b88-90c3-a95f61fc4cc5]: exited
+[debug] [2020-07-15T06:48:07.585Z] DEBUG: [worker-~diagnostic~-0db86181-bede-4b88-90c3-a95f61fc4cc5]: FINISHED
+[debug] [2020-07-15T06:51:39.228Z] ----------------------------------------------------------------------
+[debug] [2020-07-15T06:51:39.230Z] Command:       /usr/local/Cellar/node/13.12.0/bin/node /Users/NickCooney/.npm-packages/bin/firebase functions:shell
+[debug] [2020-07-15T06:51:39.231Z] CLI Version:   8.5.0
+[debug] [2020-07-15T06:51:39.231Z] Platform:      darwin
+[debug] [2020-07-15T06:51:39.231Z] Node Version:  v13.12.0
+[debug] [2020-07-15T06:51:39.234Z] Time:          Wed Jul 15 2020 16:51:39 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2020-07-15T06:51:39.234Z] ----------------------------------------------------------------------
+[debug] [2020-07-15T06:51:39.234Z] 
+[debug] [2020-07-15T06:51:39.242Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-15T06:51:39.242Z] > authorizing via signed-in user
+[debug] [2020-07-15T06:51:39.243Z] [iam] checking project oauthpf for permissions ["firebase.projects.get"]
+[debug] [2020-07-15T06:51:39.245Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/oauthpf:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-15T06:51:40.670Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 15 Jul 2020 06:51:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1015","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"13\""}}
+[debug] [2020-07-15T06:51:40.693Z] [functions] Watching "/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions" for Cloud Functions...
+[debug] [2020-07-15T06:51:40.702Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-07-15T06:51:40.703Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-07-15T06:51:40.703Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-07-15T06:51:40.703Z] DEBUG: [worker-~diagnostic~-e5820595-f3dc-40b5-af49-28bd9bb2020c]: Assigning socketPath: /var/folders/v8/mgx6t3tx2sd3yp7zfsms4hp80000gn/T/fire_emu_1595.sock
+[debug] [2020-07-15T06:51:40.704Z] DEBUG: [worker-~diagnostic~-e5820595-f3dc-40b5-af49-28bd9bb2020c]: BUSY
+[debug] [2020-07-15T06:51:41.022Z] DEBUG: [runtime-status] [1595] Functions runtime initialized. {"cwd":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions","node_version":"13.12.0"}
+[debug] [2020-07-15T06:51:41.029Z] DEBUG: [runtime-status] [1595] Disabled runtime features: undefined
+[debug] [2020-07-15T06:51:41.031Z] DEBUG: [runtime-status] [1595] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-15T06:51:41.035Z] DEBUG: [runtime-status] [1595] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:51:41.038Z] DEBUG: [runtime-status] [1595] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-07-15T06:51:41.039Z] DEBUG: [runtime-status] [1595] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:51:41.072Z] DEBUG: [runtime-status] [1595] Checked functions.config() {"config":{}}
+[debug] [2020-07-15T06:51:41.072Z] DEBUG: [runtime-status] [1595] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-07-15T06:51:41.073Z] DEBUG: [runtime-status] [1595] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:51:41.074Z] DEBUG: [runtime-status] [1595] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-15T06:51:41.074Z] DEBUG: [runtime-status] [1595] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-15T06:51:41.075Z] DEBUG: [runtime-status] [1595] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().firebase but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[debug] [2020-07-15T06:51:41.082Z] DEBUG: [runtime-status] [1595] initializeApp(DEFAULT) {"databaseURL":"https://oauthpf.firebaseio.com","storageBucket":"oauthpf.appspot.com","projectId":"oauthpf"}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    analytics: { {"user":"  analytics: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   analytics: {"}}
+[info] >      provider: 'google.analytics', {"user":"    provider: 'google.analytics',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.analytics',"}}
+[info] >      service: 'app-measurement.com', {"user":"    service: 'app-measurement.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'app-measurement.com',"}}
+[info] >      event: [Function: event], {"user":"    event: [Function: event],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     event: [Function: event],"}}
+[info] >      _eventWithOptions: [Function: _eventWithOptions], {"user":"    _eventWithOptions: [Function: _eventWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _eventWithOptions: [Function: _eventWithOptions],"}}
+[info] >      AnalyticsEventBuilder: [Function: AnalyticsEventBuilder], {"user":"    AnalyticsEventBuilder: [Function: AnalyticsEventBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     AnalyticsEventBuilder: [Function: AnalyticsEventBuilder],"}}
+[info] >      AnalyticsEvent: [Function: AnalyticsEvent], {"user":"    AnalyticsEvent: [Function: AnalyticsEvent],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     AnalyticsEvent: [Function: AnalyticsEvent],"}}
+[info] >      UserDimensions: [Function: UserDimensions], {"user":"    UserDimensions: [Function: UserDimensions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     UserDimensions: [Function: UserDimensions],"}}
+[info] >      UserPropertyValue: [Function: UserPropertyValue], {"user":"    UserPropertyValue: [Function: UserPropertyValue],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     UserPropertyValue: [Function: UserPropertyValue],"}}
+[info] >      ExportBundleInfo: [Function: ExportBundleInfo] {"user":"    ExportBundleInfo: [Function: ExportBundleInfo]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ExportBundleInfo: [Function: ExportBundleInfo]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    app: Apps { {"user":"  app: Apps {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   app: Apps {"}}
+[info] >      _refCounter: {}, {"user":"    _refCounter: {},","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _refCounter: {},"}}
+[info] >      _emulatedAdminApp: FirebaseApp { {"user":"    _emulatedAdminApp: FirebaseApp {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _emulatedAdminApp: FirebaseApp {"}}
+[info] >        firebaseInternals_: [FirebaseNamespaceInternals], {"user":"      firebaseInternals_: [FirebaseNamespaceInternals],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       firebaseInternals_: [FirebaseNamespaceInternals],"}}
+[info] >        services_: {}, {"user":"      services_: {},","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       services_: {},"}}
+[info] >        isDeleted_: false, {"user":"      isDeleted_: false,","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       isDeleted_: false,"}}
+[info] >        name_: '[DEFAULT]', {"user":"      name_: '[DEFAULT]',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       name_: '[DEFAULT]',"}}
+[info] >        options_: [Object], {"user":"      options_: [Object],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       options_: [Object],"}}
+[info] >        INTERNAL: [FirebaseAppInternals] {"user":"      INTERNAL: [FirebaseAppInternals]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m       INTERNAL: [FirebaseAppInternals]"}}
+[info] >      } {"user":"    }","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     }"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    auth: { {"user":"  auth: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   auth: {"}}
+[info] >      provider: 'google.firebase.auth', {"user":"    provider: 'google.firebase.auth',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.firebase.auth',"}}
+[info] >      service: 'firebaseauth.googleapis.com', {"user":"    service: 'firebaseauth.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'firebaseauth.googleapis.com',"}}
+[info] >      user: [Function: user], {"user":"    user: [Function: user],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     user: [Function: user],"}}
+[info] >      _userWithOptions: [Function: _userWithOptions], {"user":"    _userWithOptions: [Function: _userWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _userWithOptions: [Function: _userWithOptions],"}}
+[info] >      UserRecordMetadata: [Function: UserRecordMetadata], {"user":"    UserRecordMetadata: [Function: UserRecordMetadata],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     UserRecordMetadata: [Function: UserRecordMetadata],"}}
+[info] >      UserBuilder: [Function: UserBuilder], {"user":"    UserBuilder: [Function: UserBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     UserBuilder: [Function: UserBuilder],"}}
+[info] >      userRecordConstructor: [Function: userRecordConstructor] {"user":"    userRecordConstructor: [Function: userRecordConstructor]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     userRecordConstructor: [Function: userRecordConstructor]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    crashlytics: { {"user":"  crashlytics: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   crashlytics: {"}}
+[info] >      provider: 'google.firebase.crashlytics', {"user":"    provider: 'google.firebase.crashlytics',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.firebase.crashlytics',"}}
+[info] >      service: 'fabric.io', {"user":"    service: 'fabric.io',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'fabric.io',"}}
+[info] >      issue: [Function: issue], {"user":"    issue: [Function: issue],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     issue: [Function: issue],"}}
+[info] >      _issueWithOptions: [Function: _issueWithOptions], {"user":"    _issueWithOptions: [Function: _issueWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _issueWithOptions: [Function: _issueWithOptions],"}}
+[info] >      IssueBuilder: [Function: IssueBuilder] {"user":"    IssueBuilder: [Function: IssueBuilder]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     IssueBuilder: [Function: IssueBuilder]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    database: { {"user":"  database: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   database: {"}}
+[info] >      provider: 'google.firebase.database', {"user":"    provider: 'google.firebase.database',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.firebase.database',"}}
+[info] >      service: 'firebaseio.com', {"user":"    service: 'firebaseio.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'firebaseio.com',"}}
+[info] >      instance: [Function: instance], {"user":"    instance: [Function: instance],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     instance: [Function: instance],"}}
+[info] >      ref: [Function: ref], {"user":"    ref: [Function: ref],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ref: [Function: ref],"}}
+[info] >      _instanceWithOptions: [Function: _instanceWithOptions], {"user":"    _instanceWithOptions: [Function: _instanceWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _instanceWithOptions: [Function: _instanceWithOptions],"}}
+[info] >      InstanceBuilder: [Function: InstanceBuilder], {"user":"    InstanceBuilder: [Function: InstanceBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     InstanceBuilder: [Function: InstanceBuilder],"}}
+[info] >      _refWithOptions: [Function: _refWithOptions], {"user":"    _refWithOptions: [Function: _refWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _refWithOptions: [Function: _refWithOptions],"}}
+[info] >      RefBuilder: [Function: RefBuilder], {"user":"    RefBuilder: [Function: RefBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     RefBuilder: [Function: RefBuilder],"}}
+[info] >      extractInstanceAndPath: [Function: extractInstanceAndPath], {"user":"    extractInstanceAndPath: [Function: extractInstanceAndPath],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     extractInstanceAndPath: [Function: extractInstanceAndPath],"}}
+[info] >      DataSnapshot: [Function: DataSnapshot] {"user":"    DataSnapshot: [Function: DataSnapshot]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     DataSnapshot: [Function: DataSnapshot]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    firestore: { {"user":"  firestore: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   firestore: {"}}
+[info] >      provider: 'google.firestore', {"user":"    provider: 'google.firestore',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.firestore',"}}
+[info] >      service: 'firestore.googleapis.com', {"user":"    service: 'firestore.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'firestore.googleapis.com',"}}
+[info] >      defaultDatabase: '(default)', {"user":"    defaultDatabase: '(default)',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     defaultDatabase: '(default)',"}}
+[info] >      document: [Function: document], {"user":"    document: [Function: document],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     document: [Function: document],"}}
+[info] >      namespace: [Function: namespace], {"user":"    namespace: [Function: namespace],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     namespace: [Function: namespace],"}}
+[info] >      database: [Function: database], {"user":"    database: [Function: database],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     database: [Function: database],"}}
+[info] >      _databaseWithOptions: [Function: _databaseWithOptions], {"user":"    _databaseWithOptions: [Function: _databaseWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _databaseWithOptions: [Function: _databaseWithOptions],"}}
+[info] >      _namespaceWithOptions: [Function: _namespaceWithOptions], {"user":"    _namespaceWithOptions: [Function: _namespaceWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _namespaceWithOptions: [Function: _namespaceWithOptions],"}}
+[info] >      _documentWithOptions: [Function: _documentWithOptions], {"user":"    _documentWithOptions: [Function: _documentWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _documentWithOptions: [Function: _documentWithOptions],"}}
+[info] >      DatabaseBuilder: [Function: DatabaseBuilder], {"user":"    DatabaseBuilder: [Function: DatabaseBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     DatabaseBuilder: [Function: DatabaseBuilder],"}}
+[info] >      NamespaceBuilder: [Function: NamespaceBuilder], {"user":"    NamespaceBuilder: [Function: NamespaceBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     NamespaceBuilder: [Function: NamespaceBuilder],"}}
+[info] >      snapshotConstructor: [Function: snapshotConstructor], {"user":"    snapshotConstructor: [Function: snapshotConstructor],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     snapshotConstructor: [Function: snapshotConstructor],"}}
+[info] >      beforeSnapshotConstructor: [Function: beforeSnapshotConstructor], {"user":"    beforeSnapshotConstructor: [Function: beforeSnapshotConstructor],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     beforeSnapshotConstructor: [Function: beforeSnapshotConstructor],"}}
+[info] >      DocumentBuilder: [Function: DocumentBuilder] {"user":"    DocumentBuilder: [Function: DocumentBuilder]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     DocumentBuilder: [Function: DocumentBuilder]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    handler: [Getter], {"user":"  handler: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   handler: [Getter],"}}
+[info] >    https: { {"user":"  https: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   https: {"}}
+[info] >      onRequest: [Function (anonymous)], {"user":"    onRequest: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     onRequest: [Function (anonymous)],"}}
+[info] >      onCall: [Function (anonymous)], {"user":"    onCall: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     onCall: [Function (anonymous)],"}}
+[info] >      _onRequestWithOptions: [Function (anonymous)], {"user":"    _onRequestWithOptions: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _onRequestWithOptions: [Function (anonymous)],"}}
+[info] >      HttpsError: [Function: HttpsError], {"user":"    HttpsError: [Function: HttpsError],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     HttpsError: [Function: HttpsError],"}}
+[info] >      encode: [Function: encode], {"user":"    encode: [Function: encode],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     encode: [Function: encode],"}}
+[info] >      decode: [Function: decode], {"user":"    decode: [Function: decode],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     decode: [Function: decode],"}}
+[info] >      _onCallWithOptions: [Function (anonymous)] {"user":"    _onCallWithOptions: [Function (anonymous)]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _onCallWithOptions: [Function (anonymous)]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    pubsub: { {"user":"  pubsub: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   pubsub: {"}}
+[info] >      provider: 'google.pubsub', {"user":"    provider: 'google.pubsub',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.pubsub',"}}
+[info] >      service: 'pubsub.googleapis.com', {"user":"    service: 'pubsub.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'pubsub.googleapis.com',"}}
+[info] >      topic: [Function: topic], {"user":"    topic: [Function: topic],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     topic: [Function: topic],"}}
+[info] >      _topicWithOptions: [Function: _topicWithOptions], {"user":"    _topicWithOptions: [Function: _topicWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _topicWithOptions: [Function: _topicWithOptions],"}}
+[info] >      TopicBuilder: [Function: TopicBuilder], {"user":"    TopicBuilder: [Function: TopicBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     TopicBuilder: [Function: TopicBuilder],"}}
+[info] >      schedule: [Function: schedule], {"user":"    schedule: [Function: schedule],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     schedule: [Function: schedule],"}}
+[info] >      _scheduleWithOptions: [Function: _scheduleWithOptions], {"user":"    _scheduleWithOptions: [Function: _scheduleWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _scheduleWithOptions: [Function: _scheduleWithOptions],"}}
+[info] >      ScheduleBuilder: [Function: ScheduleBuilder], {"user":"    ScheduleBuilder: [Function: ScheduleBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ScheduleBuilder: [Function: ScheduleBuilder],"}}
+[info] >      Message: [Function: Message] {"user":"    Message: [Function: Message]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     Message: [Function: Message]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    remoteConfig: { {"user":"  remoteConfig: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   remoteConfig: {"}}
+[info] >      provider: 'google.firebase.remoteconfig', {"user":"    provider: 'google.firebase.remoteconfig',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.firebase.remoteconfig',"}}
+[info] >      service: 'firebaseremoteconfig.googleapis.com', {"user":"    service: 'firebaseremoteconfig.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'firebaseremoteconfig.googleapis.com',"}}
+[info] >      onUpdate: [Function: onUpdate], {"user":"    onUpdate: [Function: onUpdate],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     onUpdate: [Function: onUpdate],"}}
+[info] >      _onUpdateWithOptions: [Function: _onUpdateWithOptions], {"user":"    _onUpdateWithOptions: [Function: _onUpdateWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _onUpdateWithOptions: [Function: _onUpdateWithOptions],"}}
+[info] >      UpdateBuilder: [Function: UpdateBuilder] {"user":"    UpdateBuilder: [Function: UpdateBuilder]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     UpdateBuilder: [Function: UpdateBuilder]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    storage: { {"user":"  storage: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   storage: {"}}
+[info] >      provider: 'google.storage', {"user":"    provider: 'google.storage',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     provider: 'google.storage',"}}
+[info] >      service: 'storage.googleapis.com', {"user":"    service: 'storage.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     service: 'storage.googleapis.com',"}}
+[info] >      bucket: [Function: bucket], {"user":"    bucket: [Function: bucket],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     bucket: [Function: bucket],"}}
+[info] >      object: [Function: object], {"user":"    object: [Function: object],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     object: [Function: object],"}}
+[info] >      _bucketWithOptions: [Function: _bucketWithOptions], {"user":"    _bucketWithOptions: [Function: _bucketWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _bucketWithOptions: [Function: _bucketWithOptions],"}}
+[info] >      _objectWithOptions: [Function: _objectWithOptions], {"user":"    _objectWithOptions: [Function: _objectWithOptions],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _objectWithOptions: [Function: _objectWithOptions],"}}
+[info] >      BucketBuilder: [Function: BucketBuilder], {"user":"    BucketBuilder: [Function: BucketBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     BucketBuilder: [Function: BucketBuilder],"}}
+[info] >      ObjectBuilder: [Function: ObjectBuilder] {"user":"    ObjectBuilder: [Function: ObjectBuilder]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ObjectBuilder: [Function: ObjectBuilder]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    testLab: { {"user":"  testLab: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   testLab: {"}}
+[info] >      PROVIDER: 'google.testing', {"user":"    PROVIDER: 'google.testing',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     PROVIDER: 'google.testing',"}}
+[info] >      SERVICE: 'testing.googleapis.com', {"user":"    SERVICE: 'testing.googleapis.com',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     SERVICE: 'testing.googleapis.com',"}}
+[info] >      TEST_MATRIX_COMPLETE_EVENT_TYPE: 'testMatrix.complete', {"user":"    TEST_MATRIX_COMPLETE_EVENT_TYPE: 'testMatrix.complete',","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     TEST_MATRIX_COMPLETE_EVENT_TYPE: 'testMatrix.complete',"}}
+[info] >      testMatrix: [Function: testMatrix], {"user":"    testMatrix: [Function: testMatrix],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     testMatrix: [Function: testMatrix],"}}
+[info] >      _testMatrixWithOpts: [Function: _testMatrixWithOpts], {"user":"    _testMatrixWithOpts: [Function: _testMatrixWithOpts],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     _testMatrixWithOpts: [Function: _testMatrixWithOpts],"}}
+[info] >      TestMatrixBuilder: [Function: TestMatrixBuilder], {"user":"    TestMatrixBuilder: [Function: TestMatrixBuilder],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     TestMatrixBuilder: [Function: TestMatrixBuilder],"}}
+[info] >      TestMatrix: [Function: TestMatrix], {"user":"    TestMatrix: [Function: TestMatrix],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     TestMatrix: [Function: TestMatrix],"}}
+[info] >      ClientInfo: [Function: ClientInfo], {"user":"    ClientInfo: [Function: ClientInfo],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ClientInfo: [Function: ClientInfo],"}}
+[info] >      ResultStorage: [Function: ResultStorage] {"user":"    ResultStorage: [Function: ResultStorage]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     ResultStorage: [Function: ResultStorage]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    logger: { {"user":"  logger: {","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   logger: {"}}
+[info] >      write: [Function: write], {"user":"    write: [Function: write],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     write: [Function: write],"}}
+[info] >      debug: [Function: debug], {"user":"    debug: [Function: debug],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     debug: [Function: debug],"}}
+[info] >      log: [Function: log], {"user":"    log: [Function: log],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     log: [Function: log],"}}
+[info] >      info: [Function: info], {"user":"    info: [Function: info],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     info: [Function: info],"}}
+[info] >      warn: [Function: warn], {"user":"    warn: [Function: warn],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     warn: [Function: warn],"}}
+[info] >      error: [Function: error] {"user":"    error: [Function: error]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m     error: [Function: error]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    Change: [Getter], {"user":"  Change: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   Change: [Getter],"}}
+[info] >    makeCloudFunction: [Getter], {"user":"  makeCloudFunction: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   makeCloudFunction: [Getter],"}}
+[info] >    optionsToTrigger: [Getter], {"user":"  optionsToTrigger: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   optionsToTrigger: [Getter],"}}
+[info] >    config: [Getter], {"user":"  config: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   config: [Getter],"}}
+[info] >    firebaseConfig: [Getter], {"user":"  firebaseConfig: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   firebaseConfig: [Getter],"}}
+[info] >    region: [Getter], {"user":"  region: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   region: [Getter],"}}
+[info] >    runWith: [Getter], {"user":"  runWith: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   runWith: [Getter],"}}
+[info] >    FunctionBuilder: [Getter], {"user":"  FunctionBuilder: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   FunctionBuilder: [Getter],"}}
+[info] >    SUPPORTED_REGIONS: [Getter], {"user":"  SUPPORTED_REGIONS: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   SUPPORTED_REGIONS: [Getter],"}}
+[info] >    MIN_TIMEOUT_SECONDS: [Getter], {"user":"  MIN_TIMEOUT_SECONDS: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   MIN_TIMEOUT_SECONDS: [Getter],"}}
+[info] >    MAX_TIMEOUT_SECONDS: [Getter], {"user":"  MAX_TIMEOUT_SECONDS: [Getter],","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   MAX_TIMEOUT_SECONDS: [Getter],"}}
+[info] >    VALID_MEMORY_OPTIONS: [Getter] {"user":"  VALID_MEMORY_OPTIONS: [Getter]","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m   VALID_MEMORY_OPTIONS: [Getter]"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  {} {"user":{},"metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m {}"}}
+[warn] ⚠  It looks like you're trying to access functions.config().hasura but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().hasura but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] ⚠  TypeError: Cannot read property 'adminsecret' of undefined
+    at Object.<anonymous> (/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/index.js:12:62)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Module.require (internal/modules/cjs/loader.js:1036:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'adminsecret' of undefined\n    at Object.<anonymous> (/Users/NickCooney/Projects/sites/main-portFailio/client/pf-client/functions/index.js:12:62)\n    at Module._compile (internal/modules/cjs/loader.js:1147:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)\n    at Module.load (internal/modules/cjs/loader.js:996:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:896:14)\n    at Module.require (internal/modules/cjs/loader.js:1036:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at /Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/NickCooney/.npm-packages/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-07-15T06:51:41.112Z] DEBUG: [worker-~diagnostic~-e5820595-f3dc-40b5-af49-28bd9bb2020c]: exited
+[debug] [2020-07-15T06:51:41.112Z] DEBUG: [worker-~diagnostic~-e5820595-f3dc-40b5-af49-28bd9bb2020c]: FINISHED

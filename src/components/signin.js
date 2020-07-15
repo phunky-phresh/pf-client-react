@@ -10,6 +10,11 @@ export default function SignInPanel () {
   const { isAuthenticating, signIn, signOut } = useContext( Services.Auth );
   const [ errors, setErrors ] = useState( null );
 
+	const _handleSubmit = (e) => {
+		e.preventDefault();
+		signIn();
+	};
+
 	const _handle = (e) => {
 		e.preventDefault();
 		signOut();
@@ -17,22 +22,13 @@ export default function SignInPanel () {
 
   return (
 		<div>
-			<Formik
-				initialValues={{}}
-				onSubmit={  () => {
-					console.log('submit');
-						signIn();      
-				}}
-			>{
-					({ values, handleChange, handleSubmit, isSubmitting }) => {
-						return (
-							<form onSubmit={handleSubmit}>
-								
-								<Button type="submit">Google</Button>
-								{ errors && <p>{ errors }</p>}
-							</form> );
-					}}
-			</Formik>
+
+			<form onSubmit={_handleSubmit}>
+				
+				<Button type="submit">Google</Button>
+				
+			</form> 
+
 			<form onSubmit={_handle}>
 				<button type="submit">signout</button>
 			</form>

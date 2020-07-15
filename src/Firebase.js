@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+import PropTypes from "prop-types";
 import firebase from 'firebase/app';
 import "firebase/auth";
 import _ from 'lodash';
@@ -16,19 +17,7 @@ firebase.initializeApp(firebaseConfig);
  export default function Firebase ({ children }) {
   const apolloClient = useApolloClient();
   const { updateAuth, authUser, uid, isAuthenticated } = useContext( Services.Auth );
-  // const [ uToken, setToken ] = useState('');
-
-  // const signIn = () => {
-  //   firebase.auth().signInWithPopup(provider).then(function(result) {
-  //   const token = result.credential.accessToken;
-  //   console.log(result);
-  //   // setToken(token);
-  //   const user = result.user;
-  // }).catch(function(error) {
-  //   console.log(error);
-  // });
-  // }
-
+  
   useEffect(() => {
     console.log("this");
     
@@ -37,7 +26,7 @@ firebase.initializeApp(firebaseConfig);
       if ( uid && uid !== authUserUid ) {
         const userRes = await apolloClient.query({ query: Queries.auth.getUser, variables: { uid }});
         const authUser = _.get(userRes, " data.users_by_pk");
-        updateAuth({ authUser, isAuthenitcating: false });
+        updateAuth({ authUser, isAuthenticating: false });
       }
       if ( !uid ) updateAuth({ authUser: {} });
     })();
@@ -52,14 +41,14 @@ firebase.initializeApp(firebaseConfig);
     });
 
     firebase.auth().onAuthStateChanged( async user => {
-      updateAuth({ isAuthenitcating: true });
+      updateAuth({ isAuthenticating: true });
       if ( user ) {
         const token = await user.getIdToken();
         const idTokenResult = await user.getIdTokenResult();
-        const hasuraClaim = idTokenResult.claims.iss;
+        const hasuraClaim = idTokenResult.claims[ "https://hasura.io/jwt/claims" ];
         // console.log(token);
-        console.log(idTokenResult);
-        console.log(hasuraClaim );
+        console.log( idTokenResult );
+        console.log( hasuraClaim );
         
         if ( hasuraClaim ) {
           console.log('yes');
@@ -67,7 +56,7 @@ firebase.initializeApp(firebaseConfig);
           updateAuth({ token, uid: user.uid });
         }
       } else {
-        updateAuth({ authUser: {}, token: null, uid: "", isAuthenitcating: false });
+        updateAuth({ authUser: {}, token: null, uid: "", isAuthenticating: false });
       }
     });
   }, []);
@@ -83,16 +72,8 @@ firebase.initializeApp(firebaseConfig);
       { children && children }
     </>
   );
-} 
+}; 
 
-
-
-// export function SignOut() {
-//   const signOut = firebase.auth().signOut().then(function() {
-//     console.log('sign out');
-
-//   }).catch( function(error) {
-//     console.log(error);
-    
-//   })
-// }
+Firebase.propTypes = {
+	children: PropTypes.node,
+};

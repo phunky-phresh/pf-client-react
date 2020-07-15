@@ -5,7 +5,6 @@ import { GET_USERS } from '../queries';
 import _ from 'lodash';
 
 const Landing = ( props) => {
-  console.log(props);
   
   const [ firstName, setName ] = useState('');
 
@@ -13,7 +12,6 @@ const Landing = ( props) => {
 
   const _handleSubmit = (e) => {
     e.preventDefault();
-    console.log('ubmit');
   }
 
   const _handleChange = (e) => {
@@ -22,12 +20,10 @@ const Landing = ( props) => {
     setName(e.target.value);
   }
 
-  if (loading) {
-    return <div>Loading....</div>
-  }
+  // if (loading) {
+  //   return <div>Loading....</div>
+  // }
   const stuff = _.get(data);
-  console.log(stuff);
-  console.log(data);
   
 
   return(
@@ -45,20 +41,7 @@ const Landing = ( props) => {
   )
 };
 
-// const FetchData = () => {
 
-//   const { loading, error, data } = useQuery(GET_USERS);
 
-//   if (loading) {
-//     return <div>Loading....</div>
-//   }
-//   if (error) { 
-//     console.log(error);
-//    return <div>ERROR!</div>
-//   }
-//   if (data) {
-//     return <Landing stuff={data}/>
-//   }
-// }
 
 export default Landing;
