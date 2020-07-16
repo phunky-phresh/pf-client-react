@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import SignIn from '../components/signin';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_USERS } from '../queries';
+// import { GET_USERS } from '../queries';
 import _ from 'lodash';
 
 const Landing = ( props) => {
   
   const [ firstName, setName ] = useState('');
 
-  const { loading, error, data } = useQuery(GET_USERS);
+  // const { loading, error, data } = useQuery(GET_USERS);
 
   const _handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const Landing = ( props) => {
   // if (loading) {
   //   return <div>Loading....</div>
   // }
-  const stuff = _.get(data);
+  // const stuff = _.get(data);
   
 
   return(
