@@ -18,23 +18,28 @@ firebase.initializeApp(firebaseConfig);
   const apolloClient = useApolloClient();
   const { updateAuth, authUser, uid, isAuthenticated } = useContext( Services.Auth );
   
+  console.log( uid, authUser )
+
   useEffect(() => {
     console.log("this");
     
     ( async () => {
       const authUserUid = _.get( authUser, "uid");
+      console.log( authUserUid )
       if ( uid && uid !== authUserUid ) {
+        console.log( "here")
         const userRes = await apolloClient.query({ query: Queries.auth.getUser, variables: { uid }});
-        const authUser = _.get(userRes, " data.users_by_pk");
+        console.log( userRes )
+        const authUser = _.get(userRes, "data.users_by_pk");
+        console.log(authUser);
         updateAuth({ authUser, isAuthenticating: false });
       }
       if ( !uid ) updateAuth({ authUser: {} });
     })();
+  // eslint-disable-next-line
   }, [ uid ]);
 
-  useEffect(() => {
-    console.log('that');
-    
+  useEffect(() => {    
     updateAuth({
       signIn: async () => await firebase.auth().signInWithPopup(provider),
       signOut: () => firebase.auth().signOut(),
@@ -45,20 +50,15 @@ firebase.initializeApp(firebaseConfig);
       if ( user ) {
         const token = await user.getIdToken();
         const idTokenResult = await user.getIdTokenResult();
-        const hasuraClaim = idTokenResult.claims[ "https://hasura.io/jwt/claims" ];
-        // console.log(token);
-        console.log( idTokenResult );
-        console.log( hasuraClaim );
-        
-        if ( hasuraClaim ) {
-          console.log('yes');
-          
+        const hasuraClaim = idTokenResult.claims[ "https://hasura.io/jwt/claims" ];      
+        if ( hasuraClaim ) {          
           updateAuth({ token, uid: user.uid });
         }
       } else {
         updateAuth({ authUser: {}, token: null, uid: "", isAuthenticating: false });
       }
     });
+  // eslint-disable-next-line
   }, []);
 
   useEffect(() => { 
@@ -77,3 +77,4 @@ firebase.initializeApp(firebaseConfig);
 Firebase.propTypes = {
 	children: PropTypes.node,
 };
+
